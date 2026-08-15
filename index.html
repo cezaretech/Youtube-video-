@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+</head>
+
+<body>
+  <p>Opening YouTube...</p>
+
+  <script>
+    const videoId = "tTDw5qoRlmc";
+
+    const appUrl = "youtube://www.youtube.com/watch?v=" + videoId;
+    const webUrl = "https://youtu.be/" + videoId;
+
+    window.location.href = appUrl;
+
+    setTimeout(function () {
+      window.location.href = webUrl;
+    }, 1500);
+  </script>
+</body>
+</html>
