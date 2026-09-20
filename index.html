@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube</title>
+
+  <script>
+    const youtubeApp = "youtube://www.youtube.com/watch?v=zjWz9JHQzuE";
+    const youtubeWeb = "https://www.youtube.com/watch?v=zjWz9JHQzuE";
+
+    window.onload = function () {
+      window.location.href = youtubeApp;
+
+      setTimeout(function () {
+        window.location.href = youtubeWeb;
+      }, 1200);
+    };
+  </script>
 </head>
 
 <body>
   <p>Opening YouTube...</p>
-
-  <script>
-    const videoId = "tTDw5qoRlmc";
-
-    const appUrl = "youtube://www.youtube.com/watch?v=" + videoId;
-    const webUrl = "https://youtu.be/" + videoId;
-
-    window.location.href = appUrl;
-
-    setTimeout(function () {
-      window.location.href = webUrl;
-    }, 1500);
-  </script>
 </body>
 </html>
